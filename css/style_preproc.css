@@ -25,33 +25,33 @@ header .container {
   padding-right: 20px;
 }
 @media screen and (max-width: 1024px) {
-  header nav {
+  header .nav {
     position: fixed;
     z-index: 98;
   }
 }
-header nav ul {
+header .nav ul {
   display: flex;
   align-items: center;
   list-style: none;
 }
-header nav ul .nav__list {
+header .nav ul .nav__list {
   list-style: none;
 }
 @media screen and (max-width: 1024px) {
-  header nav ul {
+  header .nav ul {
     display: block;
   }
 }
-header nav ul li {
+header .nav ul li {
   margin-left: 40px;
 }
 @media screen and (max-width: 1024px) {
-  header nav ul li {
+  header .nav ul li {
     margin-left: 0;
   }
 }
-header nav ul li a {
+header .nav ul li a {
   text-decoration: none;
   color: black;
   font-family: arial;
@@ -60,12 +60,12 @@ header nav ul li a {
   font-weight: 400;
   line-height: 20px;
 }
-header nav ul li:hover {
+header .nav ul li:hover {
   transform: rotate(360deg);
   transition: 0.3s;
 }
 @media screen and (max-width: 1024px) {
-  header nav:before {
+  header .nav:before {
     content: "";
     position: fixed;
     width: 100vw;
@@ -86,7 +86,7 @@ header nav ul li:hover {
   }
 }
 @media screen and (max-width: 1024px) {
-  header nav:after {
+  header .nav:after {
     content: "";
     position: fixed;
     width: 100vw;

@@ -28,18 +28,18 @@ header {
     padding-left: 32px;
     padding-right: 20px;
   }
-  nav {
-    @include max-screen(1024px){
+  .nav {
+    .nav__content{
+      .nav__list{
+        list-style: none;
+      }
+      @include max-screen(1024px){
       position: fixed;
       z-index: 98;
     }
     ul {
       display: flex;
       align-items: center;
-      list-style: none;
-      .nav__list{
-        list-style: none;
-      }
       @include max-screen(1024px){
         display: block;
       }
